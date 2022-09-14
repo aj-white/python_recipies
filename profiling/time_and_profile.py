@@ -1,10 +1,11 @@
 """Courtesy of Bob @ PyBites https://www.youtube.com/watch?v=nnkY3dcH74o"""
 
 import cProfile
+import time
+
 from functools import wraps
 from pstats import Stats
 from pstats import SortKey
-from time import perf_counter
 
 
 def timing(func):
