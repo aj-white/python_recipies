@@ -7,4 +7,4 @@ def timer():
     yield
     elapsed = time.perf_counter_ns()
 
-    print(f"Code ran in {elapsed: 3f} ns")
+    print(f"Code ran in {elapsed - start: 3f} ns")
