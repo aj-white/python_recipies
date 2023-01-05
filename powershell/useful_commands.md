@@ -11,6 +11,14 @@
 Many thanks to [Lotpings on stackoverflow](https://superuser.com/questions/1337434/how-to-create-multiple-folders-in-powershell)
 
 
+## Deleting Folders
+
+### Delete a hidden folder (looking at you .git)
+
+```powershell
+Get-ChildItem -Hidden | Remove-Item -Force
+```
+
 ## Create Aliases
 
 ### Create Alias for directory location
