@@ -27,6 +27,15 @@ Get-ChildItem -Hidden | Remove-Item -Force
 function pathToPythonProjects{Set-Location -Path \path\to\python\projects}
 Set-Alias -Name myprojectalias -Value pathToPythonProjects
 ```
+## Searching
+
+### Recursive Search By Pattern
+
+```powershell
+dir -Recurse | Select-String -pattern [SEARCH_PATTERN]
+```
+Thanks to [jamescoyle](https://www.jamescoyle.net/how-to/1205-how-to-use-powershell-to-recursively-search-for-text-within-files-on-windows)
+
 
 ## Powershell profile
 
