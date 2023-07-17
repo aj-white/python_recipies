@@ -36,6 +36,18 @@ dir -Recurse | Select-String -pattern [SEARCH_PATTERN]
 ```
 Thanks to [jamescoyle](https://www.jamescoyle.net/how-to/1205-how-to-use-powershell-to-recursively-search-for-text-within-files-on-windows)
 
+### List only directories
+
+```powershell
+ls -Directory
+```
+
+### Copy Current Location to clipboard
+
+```powershell
+(pwd).Path | Set-Clipboard
+```
+
 
 ## Powershell profile
 
