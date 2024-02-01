@@ -15,3 +15,11 @@ def nested_get(d: dict, keys:str, default= None):
         d
     )
 ```
+
+# Custom sort order
+```python
+example_dict = {"MAX": 3, "MOD": 2, "MIN": 1}
+
+# want sort order to be MIN, MOD, MAX
+{k: example_dict[k] for k in ["MIN", "MOD", "MAX"] if k in example_dict}
+```
